@@ -8,7 +8,7 @@ const Posts = ({ isGrid }) => {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(data => data.json())
             .then(json => {
-                setPosts(json.slice(0, 15)); // faqat 15 ta post
+                setPosts(json.slice(0, 15)); 
                 setLoading(false);
             });
     }, []);
